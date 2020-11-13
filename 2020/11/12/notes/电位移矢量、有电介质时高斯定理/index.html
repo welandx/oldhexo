@@ -28,8 +28,9 @@
 <meta property="og:description" content="电位移矢量极化电荷面密度与自由电荷面密度 \vec{D}&#x3D;\varepsilon_0\varepsilon_r\vec{E}&#x3D;\varepsilon\vec{E}$\varepsilon$为电介质的电容率 有电介质时的高斯定理电磁场 \oint_S\vec{D}\cdot\mathrm{d}\vec{S}&#x3D;\sum_iq_{0i}$\sum_iq_{0i}$为自由电荷代数和，$\oint_S\ve">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-11-12T15:38:00.000Z">
-<meta property="article:modified_time" content="2020-11-13T12:42:53.692Z">
+<meta property="article:modified_time" content="2020-11-13T17:10:32.720Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="大学物理">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="http://yoursite.com/2020/11/12/notes/%E7%94%B5%E4%BD%8D%E7%A7%BB%E7%9F%A2%E9%87%8F%E3%80%81%E6%9C%89%E7%94%B5%E4%BB%8B%E8%B4%A8%E6%97%B6%E9%AB%98%E6%96%AF%E5%AE%9A%E7%90%86/">
@@ -180,8 +181,17 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-11-13 20:42:53" itemprop="dateModified" datetime="2020-11-13T20:42:53+08:00">2020-11-13</time>
+                <time title="Modified: 2020-11-14 01:10:32" itemprop="dateModified" datetime="2020-11-14T01:10:32+08:00">2020-11-14</time>
               </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/" itemprop="url" rel="index"><span itemprop="name">大学物理</span></a>
+                </span>
+            </span>
 
           
 
@@ -211,6 +221,9 @@
     
 
       <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/" rel="tag"># 大学物理</a>
+          </div>
 
         
 
@@ -297,7 +310,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">11</span>
+          <span class="site-state-item-count">9</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -337,7 +350,7 @@
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">John Doe</span>
+  <span class="author" itemprop="copyrightHolder">weland</span>
 </div>
   <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a>
   </div>
@@ -392,6 +405,61 @@
   
 
   
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+          load: ['[tex]/mhchem'],
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+          packages: {'[+]': ['mhchem']},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
 
   
 
