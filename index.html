@@ -92,11 +92,11 @@
 <li>相关系数 $C_{12}$<br>$C_{12}=\frac{\int_{t_{1}}^{t_{2}} f_{1}(t) f_{2}(t) \mathrm{d} t}{\int_{t_{1}}^{t_{2}} f_{2}^{2}(t) \mathrm{d} t}$</li>
 <li>判断是否正交：$C_{12}=0$</li>
 </ul>
-<h2 id="完备正交集"><a href="#完备正交集" class="headerlink" title="完备正交集"></a>完备正交集</h2><h2 id="傅立叶级数——-连续时间-周期-信号"><a href="#傅立叶级数——-连续时间-周期-信号" class="headerlink" title="傅立叶级数—— 连续时间 周期 信号"></a>傅立叶级数—— 连续时间 <em>周期</em> 信号</h2><h3 id="三角形式"><a href="#三角形式" class="headerlink" title="三角形式"></a>三角形式</h3><p>$f(t)=a_{0}+\sum_{i=1}\left(a_{n} \cos n \omega_{1} t+b_{n} \sin n \omega_{1} t\right)$</p>
-<p>$\begin{array}{l}a_{0}=\frac{1}{T} \int_{0}^{T} f(t) \mathrm{d} t \ a_{n}=\frac{2}{T} \int_{0}^{T} f(t) \cos n \omega_{1} t \mathrm{d} t \quad(n=1,2,3, \cdots) \ b_{n}=\frac{2}{T} \int_{0}^{T} f(t) \sin n \omega_{1} t \mathrm{d} t \quad(n=1,2,3, \cdots)\end{array}$</p>
+<h2 id="完备正交集"><a href="#完备正交集" class="headerlink" title="完备正交集"></a>完备正交集</h2><h2 id="傅立叶级数——-连续时间-周期-信号"><a href="#傅立叶级数——-连续时间-周期-信号" class="headerlink" title="傅立叶级数—— 连续时间 _周期_ 信号"></a>傅立叶级数—— 连续时间 _周期_ 信号</h2><h3 id="三角形式"><a href="#三角形式" class="headerlink" title="三角形式"></a>三角形式</h3><p>$f(t)=a_{0}+\sum_{i=1}\left(a_{n} \cos n \omega_{1} t+b_{n} \sin n \omega_{1} t\right)$</p>
+<p>$\begin{array}{l}a_{0}=\frac{1}{T} \int_{0}^{T} f(t) \mathrm{d} t \\ a_{n}=\frac{2}{T} \int_{0}^{T} f(t) \cos n \omega_{1} t \mathrm{d} t \quad(n=1,2,3, \cdots) \\ b_{n}=\frac{2}{T} \int_{0}^{T} f(t) \sin n \omega_{1} t \mathrm{d} t \quad(n=1,2,3, \cdots)\end{array}$</p>
 <p><strong>同频率项合并，可以得到正弦或者余弦形式</strong>：</p>
-<p>$\begin{array}{l}f(t)=c_{0}+\sum_{n=1} c_{n} \cos \left(n \omega_{1} t+\varphi_{n}\right) \ f(t)=d_{0}+\sum d_{n} \sin \left(n \omega_{1} t+\theta_{n}\right)\end{array}$</p>
-<p>其中<br>$\begin{array}{l}c_{0}=a_{0}=d_{0} \ c_{n}=d_{n}=\sqrt{a_{n}^{2}+b_{n}^{2}} \ a_{n}=c_{n} \cos \varphi_{n}=d_{n} \sin \theta_{n} \ b_{n}=-c_{n} \sin \varphi_{n}=d_{n} \cos \theta_{n} \ \varphi_{n}=\operatorname{tg}^{-1}\left(\frac{-b_{n}}{a_{n}}\right) \ \theta_{n}=\operatorname{tg}^{-1}\left(\frac{b_{n}}{a_{n}}\right)\end{array}$</p>
+<p>$\begin{array}{l}f(t)=c_{0}+\sum_{n=1} c_{n} \cos \left(n \omega_{1} t+\varphi_{n}\right) \\ f(t)=d_{0}+\sum d_{n} \sin \left(n \omega_{1} t+\theta_{n}\right)\end{array}$</p>
+<p>其中<br>$\begin{array}{l}c_{0}=a_{0}=d_{0} \\ c_{n}=d_{n}=\sqrt{a_{n}^{2}+b_{n}^{2}} \\ a_{n}=c_{n} \cos \varphi_{n}=d_{n} \sin \theta_{n} \\ b_{n}=-c_{n} \sin \varphi_{n}=d_{n} \cos \theta_{n} \\ \varphi_{n}=\operatorname{tg}^{-1}\left(\frac{-b_{n}}{a_{n}}\right) \\ \theta_{n}=\operatorname{tg}^{-1}\left(\frac{b_{n}}{a_{n}}\right)\end{array}$</p>
 <h3 id="指数形式"><a href="#指数形式" class="headerlink" title="指数形式"></a>指数形式</h3><p>$f(t)=\sum_{n=-\infty}^{\infty} F\left(n \omega_{1}\right) \mathrm{e}^{\mathrm{j} n \omega_{1} t}$</p>
 <p>其中相关系数：<br>$F_{n}=\frac{\int_{0}^{T} f(t) \mathrm{e}^{-\mathrm{j} n \omega_{1} t} \mathrm{d} t}{\int_{0}^{T} \mathrm{e}^{\mathrm{j} n \omega_{1}^{\prime} \mathrm{e}^{-\mathrm{j} n \omega_{1}^{t}} \mathrm{d} t}}=\frac{1}{T} \int_{0}^{T} f(t) \mathrm{e}^{-\mathrm{j} n \omega_{1} t} \mathrm{d} t$</p>
 <h3 id="傅立叶级数性质"><a href="#傅立叶级数性质" class="headerlink" title="傅立叶级数性质"></a>傅立叶级数性质</h3><ol>
@@ -108,46 +108,37 @@
 </li>
 </ol>
 <h3 id="函数对称性与傅立叶级数关系"><a href="#函数对称性与傅立叶级数关系" class="headerlink" title="函数对称性与傅立叶级数关系"></a>函数对称性与傅立叶级数关系</h3><p>根据函数特性简化运算</p>
-<h4 id="偶函数"><a href="#偶函数" class="headerlink" title="偶函数"></a>偶函数</h4><p>$\begin{aligned} a_{n} &amp;\left.=\frac{4}{T_{1}} \int_{0}^{\frac{T_{1}}{2}} f(t) \cos n \omega_{1} t \mathrm{d} t \neq 0\right] \ b_{n} &amp;=0 \end{aligned}$</p>
-<h4 id="奇函数"><a href="#奇函数" class="headerlink" title="奇函数"></a>奇函数</h4><p>$\left.\begin{array}{l}a_{0}=0, a_{n}=0 \ b_{n}=\frac{4}{T_{1}} \int_{0}^{\frac{T_{1}}{2}} f(t) \sin n \omega_{1} t \mathrm{d} t \neq 0\end{array}\right}$</p>
-<p>$\begin{array}{l}F_{n}=F\left(n \omega_{1}\right)=\frac{1}{2}\left(a_{n}-j b_{n}\right)=-\frac{1}{2} j b_{n} \ \varphi_{n}=-\frac{\pi}{2}\end{array}$</p>
+<h4 id="偶函数"><a href="#偶函数" class="headerlink" title="偶函数"></a>偶函数</h4><p>$\begin{aligned} a_{n} &amp;\left.=\frac{4}{T_{1}} \int_{0}^{\frac{T_{1}}{2}} f(t) \cos n \omega_{1} t \mathrm{d} t \neq 0\right] \\ b_{n} &amp;=0 \end{aligned}$</p>
+<h4 id="奇函数"><a href="#奇函数" class="headerlink" title="奇函数"></a>奇函数</h4><p>$\left.\begin{array}{l}a_{0}=0, a_{n}=0 \\ b_{n}=\frac{4}{T_{1}} \int_{0}^{\frac{T_{1}}{2}} f(t) \sin n \omega_{1} t \mathrm{d} t \neq 0\end{array}\right\}$</p>
+<p>$\begin{array}{l}F_{n}=F\left(n \omega_{1}\right)=\frac{1}{2}\left(a_{n}-j b_{n}\right)=-\frac{1}{2} j b_{n} \\ \varphi_{n}=-\frac{\pi}{2}\end{array}$</p>
 <h4 id="奇谐函数"><a href="#奇谐函数" class="headerlink" title="奇谐函数"></a>奇谐函数</h4><p>信号波形沿时间轴平移半个周期，并相对时间轴上下反转，波形不发生变化</p>
 <p>$f(t)=-f\left(t \pm \frac{T_{1}}{2}\right)$</p>
 <h4 id="偶谐函数"><a href="#偶谐函数" class="headerlink" title="偶谐函数"></a>偶谐函数</h4><p>信号波形沿时间轴平移半个周期，波形不发生变化<br>无意义</p>
 <p>$f(t)=f\left(t \pm \frac{T_{1}}{2}\right)$</p>
-<h3 id="周期矩形脉冲频谱与周期的关系"><a href="#周期矩形脉冲频谱与周期的关系" class="headerlink" title="周期矩形脉冲频谱与周期的关系"></a>周期矩形脉冲频谱与周期的关系</h3><h2 id="连续时间非周期信号"><a href="#连续时间非周期信号" class="headerlink" title="连续时间非周期信号"></a>连续时间非周期信号</h2><p>傅立叶变换式<br>$$F(\omega)=\mathscr{F}[f(t)]=\int_{-\infty}^{\infty} f(t) \mathrm{e}^{-\mathrm{j} \omega t} \mathrm{d} t$$</p>
-<p>反变换<br>$$f(t)=\mathscr{F}^{-1}[F(\omega)]=\frac{1}{2 \pi} \int_{-\infty}^{\infty} F(\omega) \mathrm{e}^{\mathrm{jot}} \mathrm{d} \omega$$</p>
-<p>$$\begin{aligned} F(\omega) &amp;=|F(\omega)| \mathrm{e}^{j \varphi(\omega)} \|F(\omega)|=&amp; \sqrt{R^{2}(\omega)+X^{2}(\omega)} \ \varphi(\omega) &amp;=\operatorname{argtan} \frac{X(\omega)}{R(\omega)} \end{aligned}$$</p>
-<h3 id="典型非周期信号的频谱"><a href="#典型非周期信号的频谱" class="headerlink" title="典型非周期信号的频谱"></a>典型非周期信号的频谱</h3><ol>
-<li><p>矩形脉冲信号：<br>$F(\omega)=E \tau \mathrm{Sa}\left(\frac{\omega \tau}{2}\right)$</p>
-</li>
-<li><p>单边指数信号：<br>$f(t)=\left{\begin{array}{ll}E \mathrm{e}^{-\alpha t} &amp; (t \geqslant 0) \ 0 &amp; (t&lt;0)\end{array}\right.$</p>
+<h3 id="周期矩形脉冲频谱与周期的关系"><a href="#周期矩形脉冲频谱与周期的关系" class="headerlink" title="周期矩形脉冲频谱与周期的关系"></a>周期矩形脉冲频谱与周期的关系</h3><h2 id="连续时间非周期信号"><a href="#连续时间非周期信号" class="headerlink" title="连续时间非周期信号"></a>连续时间非周期信号</h2><p>傅立叶变换式</p>
+<script type="math/tex; mode=display">F(\omega)=\mathscr{F}[f(t)]=\int_{-\infty}^{\infty} f(t) \mathrm{e}^{-\mathrm{j} \omega t} \mathrm{d} t</script><p>反变换</p>
+<script type="math/tex; mode=display">f(t)=\mathscr{F}^{-1}[F(\omega)]=\frac{1}{2 \pi} \int_{-\infty}^{\infty} F(\omega) \mathrm{e}^{\mathrm{jot}} \mathrm{d} \omega</script><script type="math/tex; mode=display">\begin{aligned} F(\omega) &=|F(\omega)| \mathrm{e}^{j \varphi(\omega)} \\|F(\omega)|=& \sqrt{R^{2}(\omega)+X^{2}(\omega)} \\ \varphi(\omega) &=\operatorname{argtan} \frac{X(\omega)}{R(\omega)} \end{aligned}</script><h3 id="典型非周期信号的频谱"><a href="#典型非周期信号的频谱" class="headerlink" title="典型非周期信号的频谱"></a>典型非周期信号的频谱</h3><ol>
+<li>矩形脉冲信号：<br>$F(\omega)=E \tau \mathrm{Sa}\left(\frac{\omega \tau}{2}\right)$</li>
+<li><p>单边指数信号：<br>$f(t)=\left\{\begin{array}{ll}E \mathrm{e}^{-\alpha t} &amp; (t \geqslant 0) \\ 0 &amp; (t&lt;0)\end{array}\right.$</p>
 <p>$\begin{aligned} F(\omega)= \frac{E}{\alpha+\mathrm{j} \omega} =\frac{E}{\sqrt{\alpha^{2}+\omega^{2}}} \mathrm{e}^{-\mathrm{jaretan}\left(\frac{\omega}{\alpha}\right)} \end{aligned}$</p>
 </li>
 <li><p>符号函数：<br>$\frac{2}{j \omega}$</p>
 </li>
-<li><p>直流信号：<br>$2 \pi E \delta(\omega)$</p>
-</li>
-<li><p>冲激信号：<br>$1$</p>
-</li>
+<li>直流信号：<br>$2 \pi E \delta(\omega)$</li>
+<li>冲激信号：<br>$1$</li>
 <li><p>单位阶跃信号：<br>$u(t)=\frac{1}{2}+\frac{1}{2} \operatorname{sgn}(t)$</p>
 <p>$F(\omega)=\pi \delta(\omega)+\frac{1}{j \omega}$</p>
 </li>
-<li><p>冲激偶函数：$\delta‘(t) \leftrightarrow j\omega$</p>
-</li>
-<li><p>$\cos \omega_ct \leftrightarrow \pi\delta(\omega-\omega_c)+\pi\delta(\omega+\omega_c)$</p>
-</li>
+<li>冲激偶函数：$\delta‘(t) \leftrightarrow j\omega$</li>
+<li>$\cos \omega_ct \leftrightarrow \pi\delta(\omega-\omega_c)+\pi\delta(\omega+\omega_c)$</li>
 </ol>
 <h3 id="傅立叶变换的性质"><a href="#傅立叶变换的性质" class="headerlink" title="傅立叶变换的性质"></a>傅立叶变换的性质</h3><ol>
-<li><p>线性</p>
-</li>
+<li>线性</li>
 <li><p>对称性：<br>$F(t) \leftrightarrow 2 \pi f(-\omega)$</p>
 <p>偶函数：$F(t) \leftrightarrow 2 \pi f(\omega)$</p>
 </li>
-<li><p>尺度变换性质：<br>$f(a t) \leftrightarrow \frac{1}{|a|} F\left(\frac{\omega}{a}\right)$ </p>
-</li>
-<li><p>时移性质：<br>$f\left(t-t_{0}\right) \leftrightarrow F(\omega) \mathrm{e}^{-\mathrm{j} \omega t_{0}}$</p>
-</li>
+<li>尺度变换性质：<br>$f(a t) \leftrightarrow \frac{1}{|a|} F\left(\frac{\omega}{a}\right)$ </li>
+<li>时移性质：<br>$f\left(t-t_{0}\right) \leftrightarrow F(\omega) \mathrm{e}^{-\mathrm{j} \omega t_{0}}$</li>
 <li><p>频移性质：<br>$f(t) \mathrm{e}^{\mathrm{j} \omega t_{0}} \leftrightarrow F\left(\omega-\omega_{0}\right)$</p>
 <p>$f(t) \cos \omega_{0} t=\frac{1}{2}\left[f(t) \mathrm{e}^{\mathrm{j} \omega_{0} t}+f(t) \mathrm{e}^{-\mathrm{j} \omega_{0^{t}}}\right]$</p>
 </li>
@@ -165,7 +156,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/11/13/notes/%E9%A2%91%E5%9F%9F%E5%88%86%E6%9E%90%E2%80%94%E5%82%85%E7%AB%8B%E5%8F%B6%E5%8F%98%E6%8D%A2/" data-id="ckhgf44si000aj0vf6d8a6lqs" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/11/13/notes/%E9%A2%91%E5%9F%9F%E5%88%86%E6%9E%90%E2%80%94%E5%82%85%E7%AB%8B%E5%8F%B6%E5%8F%98%E6%8D%A2/" data-id="ckhgfidh9000a74vfglsf4hvn" class="article-share-link">Share</a>
       
       
     </footer>
@@ -207,7 +198,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/11/13/notes/%E9%9B%86%E6%88%90%E8%A7%A6%E5%8F%91%E5%99%A8/" data-id="ckhgf44s40008j0vf7jjz6g4f" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/11/13/notes/%E9%9B%86%E6%88%90%E8%A7%A6%E5%8F%91%E5%99%A8/" data-id="ckhgfidh8000874vfdr3d9pku" class="article-share-link">Share</a>
       
       
     </footer>
@@ -239,15 +230,19 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="磁场-磁感应强度"><a href="#磁场-磁感应强度" class="headerlink" title="磁场 磁感应强度"></a>磁场 磁感应强度</h1><p>电流元矢量：$I\mathrm{d}l$<br>与磁场夹角 $\theta$<br>定义磁感应强度：<br>$$B=\frac{\mathrm{d}F}{I\mathrm{d}l\sin\theta}$$<br>所以电流元所受磁场作用力：$\mathrm{d}\vec{F}=\vec{I}\mathrm{d}\vec{l}\times\vec{B}$，大小为： $\mathrm{d}F=BI\mathrm{d}l\sin\theta$<br>同时：$B=\frac{\mathrm{d}F_{max}}{I\mathrm{d}l}$</p>
-<h2 id="毕奥-萨伐尔定律"><a href="#毕奥-萨伐尔定律" class="headerlink" title="毕奥-萨伐尔定律"></a>毕奥-萨伐尔定律</h2><p>$$\mathrm{d}\vec{B}=\frac{\mu_0}{4\pi}\frac{\vec{I}\mathrm{d}\vec{l}\times\vec{r}}{r^3}$$</p>
-<blockquote>
+        <h1 id="磁场-磁感应强度"><a href="#磁场-磁感应强度" class="headerlink" title="磁场 磁感应强度"></a>磁场 磁感应强度</h1><p>电流元矢量：$I\mathrm{d}l$<br>与磁场夹角 $\theta$<br>定义磁感应强度：</p>
+<script type="math/tex; mode=display">B=\frac{\mathrm{d}F}{I\mathrm{d}l\sin\theta}</script><p>所以电流元所受磁场作用力：$\mathrm{d}\vec{F}=\vec{I}\mathrm{d}\vec{l}\times\vec{B}$，大小为： $\mathrm{d}F=BI\mathrm{d}l\sin\theta$<br>同时：$B=\frac{\mathrm{d}F_{max}}{I\mathrm{d}l}$</p>
+<h2 id="毕奥-萨伐尔定律"><a href="#毕奥-萨伐尔定律" class="headerlink" title="毕奥-萨伐尔定律"></a>毕奥-萨伐尔定律</h2><script type="math/tex; mode=display">\mathrm{d}\vec{B}=\frac{\mu_0}{4\pi}\frac{\vec{I}\mathrm{d}\vec{l}\times\vec{r}}{r^3}</script><blockquote>
 <p>典型</p>
 </blockquote>
-<p>$$<br>\begin{array}{|c|c|} %<br>    \hline %<br>    \无限长载流直导线&amp;B=\frac{\mu_0I}{2\pi a}(a为距离)\<br>    \载流线圈轴线上一点&amp;\vec{B}=\frac{\mu_0}{2\pi}\frac{\vec{m}}{(x^2+R^2)^{3/2}}\<br>    \<br>    \hline %<br>\end{array}<br>$$</p>
-<h2 id="运动电荷的磁场"><a href="#运动电荷的磁场" class="headerlink" title="运动电荷的磁场"></a>运动电荷的磁场</h2><p>$$\mathrm{d}\vec{B}=\frac{\mu_0}{4\pi}\frac{q\vec{v}\times\vec{r}}{r^3}$$</p>
-<h3 id="运动电荷磁场与电场关系"><a href="#运动电荷磁场与电场关系" class="headerlink" title="运动电荷磁场与电场关系"></a>运动电荷磁场与电场关系</h3><p>$$\vec{B}=\mu_0\varepsilon_0\vec{v}\times\vec{E}$$</p>
-<h1 id="磁通量-磁场的高斯定理"><a href="#磁通量-磁场的高斯定理" class="headerlink" title="磁通量 磁场的高斯定理"></a>磁通量 磁场的高斯定理</h1><p>磁通量</p>
+<script type="math/tex; mode=display">
+\begin{array}{|c|c|} %
+    \hline %
+    \\无限长载流直导线&B=\frac{\mu_0I}{2\pi a}(a为距离)\\
+    \\载流线圈轴线上一点&\vec{B}=\frac{\mu_0}{2\pi}\frac{\vec{m}}{(x^2+R^2)^{3/2}}\\
+    \\
+    \hline %
+\end{array}</script><h2 id="运动电荷的磁场"><a href="#运动电荷的磁场" class="headerlink" title="运动电荷的磁场"></a>运动电荷的磁场</h2><script type="math/tex; mode=display">\mathrm{d}\vec{B}=\frac{\mu_0}{4\pi}\frac{q\vec{v}\times\vec{r}}{r^3}</script><h3 id="运动电荷磁场与电场关系"><a href="#运动电荷磁场与电场关系" class="headerlink" title="运动电荷磁场与电场关系"></a>运动电荷磁场与电场关系</h3><script type="math/tex; mode=display">\vec{B}=\mu_0\varepsilon_0\vec{v}\times\vec{E}</script><h1 id="磁通量-磁场的高斯定理"><a href="#磁通量-磁场的高斯定理" class="headerlink" title="磁通量 磁场的高斯定理"></a>磁通量 磁场的高斯定理</h1><p>磁通量</p>
 <p>磁场高斯定理</p>
 <h1 id="安培环路定理"><a href="#安培环路定理" class="headerlink" title="安培环路定理"></a>安培环路定理</h1><h1 id="磁场对电流作用"><a href="#磁场对电流作用" class="headerlink" title="磁场对电流作用"></a>磁场对电流作用</h1><blockquote>
 <p>安培力（做功）</p>
@@ -259,7 +254,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/11/13/notes/%E7%A8%B3%E6%81%92%E7%94%B5%E6%B5%81%E7%9A%84%E7%A3%81%E5%9C%BA/" data-id="ckhgf44s00006j0vf6ktlg4c1" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/11/13/notes/%E7%A8%B3%E6%81%92%E7%94%B5%E6%B5%81%E7%9A%84%E7%A3%81%E5%9C%BA/" data-id="ckhgfidh7000774vfhkmzfvq2" class="article-share-link">Share</a>
       
       
     </footer>
@@ -292,13 +287,12 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h2 id="磁介质的分类"><a href="#磁介质的分类" class="headerlink" title="磁介质的分类"></a>磁介质的分类</h2><p>顺磁质<br>抗磁质<br>铁磁质</p>
-<h1 id="有磁介质时的磁高斯定理"><a href="#有磁介质时的磁高斯定理" class="headerlink" title="有磁介质时的磁高斯定理"></a>有磁介质时的磁高斯定理</h1><p>$$\oint_S\vec{B}\cdot\mathrm{d}\vec{S}=0$$</p>
-<h1 id="有磁介质时的安培环路定理"><a href="#有磁介质时的安培环路定理" class="headerlink" title="有磁介质时的安培环路定理"></a>有磁介质时的安培环路定理</h1><p>磁场强度矢量<br>$$\oint_L\vec{H}\cdot\mathrm{d}\vec{l}=\sum_L\vec{I}_传$$</p>
-
+<h1 id="有磁介质时的磁高斯定理"><a href="#有磁介质时的磁高斯定理" class="headerlink" title="有磁介质时的磁高斯定理"></a>有磁介质时的磁高斯定理</h1><script type="math/tex; mode=display">\oint_S\vec{B}\cdot\mathrm{d}\vec{S}=0</script><h1 id="有磁介质时的安培环路定理"><a href="#有磁介质时的安培环路定理" class="headerlink" title="有磁介质时的安培环路定理"></a>有磁介质时的安培环路定理</h1><p>磁场强度矢量</p>
+<script type="math/tex; mode=display">\oint_L\vec{H}\cdot\mathrm{d}\vec{l}=\sum_L\vec{I}_传</script>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/11/13/notes/%E7%A3%81%E4%BB%8B%E8%B4%A8/" data-id="ckhgf44s10007j0vf2hueeftj" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/11/13/notes/%E7%A3%81%E4%BB%8B%E8%B4%A8/" data-id="ckhgfidh6000674vfd2hv0wpb" class="article-share-link">Share</a>
       
       
     </footer>
@@ -336,13 +330,13 @@
 <p>离散系统特征方程式</p>
 <h3 id="求解过程"><a href="#求解过程" class="headerlink" title="求解过程"></a>求解过程</h3><p>微分方程的$e^{rx}$转为$r^n$</p>
 <p>共轭复根</p>
-<p>$\begin{aligned} c_{1} r_{1}^{n}+c_{2} r_{2}^{n} &amp;=\left|c_{1}\right| M^{n}\left[\mathrm{e}^{\mathrm{j}(n \phi+\theta)}+\mathrm{e}^{-\mathrm{j}(n \phi+\theta)}\right] \ &amp;=2\left|c_{1}\right| M^{n} \cos (n \phi+\theta) \end{aligned}$</p>
+<p>$\begin{aligned} c_{1} r_{1}^{n}+c_{2} r_{2}^{n} &amp;=\left|c_{1}\right| M^{n}\left[\mathrm{e}^{\mathrm{j}(n \phi+\theta)}+\mathrm{e}^{-\mathrm{j}(n \phi+\theta)}\right] \\ &amp;=2\left|c_{1}\right| M^{n} \cos (n \phi+\theta) \end{aligned}$</p>
 <p><img src="https://i.loli.net/2020/11/07/VNvdWnlKqtfe2yg.jpg" alt=""></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/11/13/notes/%E6%97%B6%E5%9F%9F%E5%88%86%E6%9E%90%E2%80%94%E5%B7%AE%E5%88%86%E6%96%B9%E7%A8%8B/" data-id="ckhgf44rq0003j0vf94r66lkv" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/11/13/notes/%E6%97%B6%E5%9F%9F%E5%88%86%E6%9E%90%E2%80%94%E5%B7%AE%E5%88%86%E6%96%B9%E7%A8%8B/" data-id="ckhgfidh2000374vfbzrwddy2" class="article-share-link">Share</a>
       
       
     </footer>
@@ -374,22 +368,23 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="静电平衡"><a href="#静电平衡" class="headerlink" title="静电平衡"></a>静电平衡</h2><p>处于静电平衡导体表面上一点<br>$$E=\frac{\sigma}{\varepsilon_0}$$</p>
-<h2 id="静电感应与静电屏蔽"><a href="#静电感应与静电屏蔽" class="headerlink" title="静电感应与静电屏蔽"></a>静电感应与静电屏蔽</h2><p><a href="电磁场.md">电磁场</a></p>
+        <h2 id="静电平衡"><a href="#静电平衡" class="headerlink" title="静电平衡"></a>静电平衡</h2><p>处于静电平衡导体表面上一点</p>
+<script type="math/tex; mode=display">E=\frac{\sigma}{\varepsilon_0}</script><h2 id="静电感应与静电屏蔽"><a href="#静电感应与静电屏蔽" class="headerlink" title="静电感应与静电屏蔽"></a>静电感应与静电屏蔽</h2><p><a href="电磁场.md">电磁场</a></p>
 <h1 id="静电场中电介质"><a href="#静电场中电介质" class="headerlink" title="静电场中电介质"></a>静电场中电介质</h1><blockquote>
 <p>电介质导电性能很差<br>(无自由电荷、内部电场为 0)</p>
 </blockquote>
-<p>两极板间充满电介质时<br>$$U=\frac{U_0}{\varepsilon_r}$$<br>电场也减弱了<br>$$E=\frac{E_0}{\varepsilon_r}$$</p>
-<h2 id="电介质极化"><a href="#电介质极化" class="headerlink" title="电介质极化"></a>电介质极化</h2><ul>
-<li>有极分子– –取向极化</li>
-<li>无极分子– –位移极化<h2 id="极化电荷面密度"><a href="#极化电荷面密度" class="headerlink" title="极化电荷面密度"></a>极化电荷面密度</h2>自由电荷:$x_0$<br>极化电荷:$x’$<br>则电介质内部任一点$E=E_0+E’=\frac{\sigma_0}{\varepsilon_0}+\frac{\sigma’}{\varepsilon’}$<br>故$\sigma’=(1-\frac{1}{\varepsilon_r})\sigma_0$</li>
+<p>两极板间充满电介质时</p>
+<script type="math/tex; mode=display">U=\frac{U_0}{\varepsilon_r}</script><p>电场也减弱了</p>
+<script type="math/tex; mode=display">E=\frac{E_0}{\varepsilon_r}</script><h2 id="电介质极化"><a href="#电介质极化" class="headerlink" title="电介质极化"></a>电介质极化</h2><ul>
+<li>有极分子— —取向极化</li>
+<li>无极分子— —位移极化<h2 id="极化电荷面密度"><a href="#极化电荷面密度" class="headerlink" title="极化电荷面密度"></a>极化电荷面密度</h2>自由电荷:$x_0$<br>极化电荷:$x’$<br>则电介质内部任一点$E=E_0+E’=\frac{\sigma_0}{\varepsilon_0}+\frac{\sigma’}{\varepsilon’}$<br>故$\sigma’=(1-\frac{1}{\varepsilon_r})\sigma_0$</li>
 </ul>
 <p><a href="">极化电荷面密度</a></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/11/12/notes/%E9%9D%99%E7%94%B5%E5%9C%BA%E4%B8%AD%E7%9A%84%E5%AF%BC%E4%BD%93%E5%92%8C%E7%94%B5%E4%BB%8B%E8%B4%A8/" data-id="ckhgf44s50009j0vfgcd81ti8" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/11/12/notes/%E9%9D%99%E7%94%B5%E5%9C%BA%E4%B8%AD%E7%9A%84%E5%AF%BC%E4%BD%93%E5%92%8C%E7%94%B5%E4%BB%8B%E8%B4%A8/" data-id="ckhgfidh8000974vfd1o7fawm" class="article-share-link">Share</a>
       
       
     </footer>
@@ -421,15 +416,20 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="电位移矢量"><a href="#电位移矢量" class="headerlink" title="电位移矢量"></a>电位移矢量</h1><p><a href="静电场中的导体和电介质.md">极化电荷面密度与自由电荷面密度</a><br>$$\vec{D}=\varepsilon_0\varepsilon_r\vec{E}=\varepsilon\vec{E}$$<br>$\varepsilon$为电介质的电容率</p>
-<h1 id="有电介质时的高斯定理"><a href="#有电介质时的高斯定理" class="headerlink" title="有电介质时的高斯定理"></a>有电介质时的高斯定理</h1><p><a href="电磁场.md">电磁场</a><br>$$\oint_S\vec{D}\cdot\mathrm{d}\vec{S}=\sum_iq_{0i}$$<br>$\sum_iq_{0i}$为自由电荷代数和，$\oint_S\vec{D}\cdot\mathrm{d}\vec{S}$为通过高斯面的电位移通量</p>
-<h1 id="电容"><a href="#电容" class="headerlink" title="电容"></a>电容</h1><p>孤立导体电容<br>$$C=\frac{q}{V}$$<br>导体球<br>$$C=4\pi\varepsilon_0R$$</p>
-<h2 id="平行板电容器电容"><a href="#平行板电容器电容" class="headerlink" title="平行板电容器电容"></a>平行板电容器电容</h2><p>$$C=\frac{q}{V_1-V_2}=\frac{q}{U}$$<br>平行板电容器<br>$$E=\frac{\sigma}{\varepsilon_0\varepsilon_r}$$<br>$$U=Ed$$<br>$$C=\frac{q}{U}=\frac{\varepsilon_0\varepsilon_rS}{d}$$<br>球形电容器<br>$$E=\frac{q}{4\pi\varepsilon_0\varepsilon_rr^2}$$<br>$$U=\frac{q}{4\pi\varepsilon_0\varepsilon_r}\frac{R_2-R_1}{R_1R_2}$$<br>$$C=\frac{4\pi\varepsilon_0\varepsilon_rR_1R_2}{R_2-R_1}$$<br>同轴电缆(圆柱形电容器)</p>
+        <h1 id="电位移矢量"><a href="#电位移矢量" class="headerlink" title="电位移矢量"></a>电位移矢量</h1><p><a href="静电场中的导体和电介质.md">极化电荷面密度与自由电荷面密度</a></p>
+<script type="math/tex; mode=display">\vec{D}=\varepsilon_0\varepsilon_r\vec{E}=\varepsilon\vec{E}</script><p>$\varepsilon$为电介质的电容率</p>
+<h1 id="有电介质时的高斯定理"><a href="#有电介质时的高斯定理" class="headerlink" title="有电介质时的高斯定理"></a>有电介质时的高斯定理</h1><p><a href="电磁场.md">电磁场</a></p>
+<script type="math/tex; mode=display">\oint_S\vec{D}\cdot\mathrm{d}\vec{S}=\sum_iq_{0i}</script><p>$\sum_iq_{0i}$为自由电荷代数和，$\oint_S\vec{D}\cdot\mathrm{d}\vec{S}$为通过高斯面的电位移通量</p>
+<h1 id="电容"><a href="#电容" class="headerlink" title="电容"></a>电容</h1><p>孤立导体电容</p>
+<script type="math/tex; mode=display">C=\frac{q}{V}</script><p>导体球</p>
+<script type="math/tex; mode=display">C=4\pi\varepsilon_0R</script><h2 id="平行板电容器电容"><a href="#平行板电容器电容" class="headerlink" title="平行板电容器电容"></a>平行板电容器电容</h2><script type="math/tex; mode=display">C=\frac{q}{V_1-V_2}=\frac{q}{U}</script><p>平行板电容器</p>
+<script type="math/tex; mode=display">E=\frac{\sigma}{\varepsilon_0\varepsilon_r}</script><script type="math/tex; mode=display">U=Ed</script><script type="math/tex; mode=display">C=\frac{q}{U}=\frac{\varepsilon_0\varepsilon_rS}{d}</script><p>球形电容器</p>
+<script type="math/tex; mode=display">E=\frac{q}{4\pi\varepsilon_0\varepsilon_rr^2}</script><script type="math/tex; mode=display">U=\frac{q}{4\pi\varepsilon_0\varepsilon_r}\frac{R_2-R_1}{R_1R_2}</script><script type="math/tex; mode=display">C=\frac{4\pi\varepsilon_0\varepsilon_rR_1R_2}{R_2-R_1}</script><p>同轴电缆(圆柱形电容器)</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/11/12/notes/%E7%94%B5%E4%BD%8D%E7%A7%BB%E7%9F%A2%E9%87%8F%E3%80%81%E6%9C%89%E7%94%B5%E4%BB%8B%E8%B4%A8%E6%97%B6%E9%AB%98%E6%96%AF%E5%AE%9A%E7%90%86/" data-id="ckhgf44rt0004j0vf9xy856jm" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/11/12/notes/%E7%94%B5%E4%BD%8D%E7%A7%BB%E7%9F%A2%E9%87%8F%E3%80%81%E6%9C%89%E7%94%B5%E4%BB%8B%E8%B4%A8%E6%97%B6%E9%AB%98%E6%96%AF%E5%AE%9A%E7%90%86/" data-id="ckhgfidh4000474vf5yometvu" class="article-share-link">Share</a>
       
       
     </footer>
@@ -463,20 +463,26 @@
       
         <h2 id="库伦定律"><a href="#库伦定律" class="headerlink" title="库伦定律"></a>库伦定律</h2><p>$F=k \frac {Qq}{r^2}=\frac{1}{4\pi \varepsilon_0}\frac{Qq}{r^2}r^0$</p>
 <h2 id="电场强度"><a href="#电场强度" class="headerlink" title="电场强度"></a>电场强度</h2><p>$E=\frac{F}{q_0}=\frac{1}{4\pi \varepsilon_0}\frac{Q}{r^2}r^0$</p>
-<h3 id="电场强度的叠加原理"><a href="#电场强度的叠加原理" class="headerlink" title="电场强度的叠加原理"></a>电场强度的叠加原理</h3><p>连续分布电荷的电场强度: $E=\frac{1}{4\pi \varepsilon_0}\int\frac{dq}{r^2}r^0$<br>$\mathrm{d} q=\left{\begin{array}{l}\lambda \mathrm{d} l \ \sigma \mathrm{d} S\end{array}\right.$</p>
-<h4 id="直棒中垂线上一点"><a href="#直棒中垂线上一点" class="headerlink" title="直棒中垂线上一点"></a>直棒中垂线上一点</h4><p>$$E=\frac{\lambda}{2\pi\varepsilon x}sin\theta_0i$$<br>无限长直棒：<br>$$E=\frac{\lambda}{2\pi\varepsilon x}$$</p>
-<h4 id="均匀带电圆环轴线上一点"><a href="#均匀带电圆环轴线上一点" class="headerlink" title="均匀带电圆环轴线上一点"></a>均匀带电圆环轴线上一点</h4><p>$$E=\frac{1}{4\pi \varepsilon_0}\frac{qx}{(R^2+x^2)^{3/2}}i$$</p>
-<h4 id="均匀带电圆盘轴线上一点"><a href="#均匀带电圆盘轴线上一点" class="headerlink" title="均匀带电圆盘轴线上一点"></a>均匀带电圆盘轴线上一点</h4><p>$$E=\frac{\sigma x}{2\varepsilon_0} \frac{rdr}{(r^2+x^2)^{3/2}}$$<br>无限大平面：<br>$$E=\frac{\sigma}{2\varepsilon_0}$$</p>
-<h4 id="一段圆弧的圆心处"><a href="#一段圆弧的圆心处" class="headerlink" title="一段圆弧的圆心处"></a>一段圆弧的圆心处</h4><h2 id="高斯定理"><a href="#高斯定理" class="headerlink" title="高斯定理"></a>高斯定理</h2><p>$$\int_sEdS= \frac{\sum q_i}{\varepsilon_0}$$</p>
-<p>$$<br>\begin{array}{|c|c|}%<br>\hline %<br>\<br>无限长直导线&amp;E=\frac{\lambda}{2\pi \varepsilon_0x}\<br>\<br>带电球体&amp;fr\<br>\<br>均匀带电球层&amp;frr\<br>\<br>\hline %<br>\end{array}<br>$$</p>
-<h2 id="静电场环路定理"><a href="#静电场环路定理" class="headerlink" title="静电场环路定理"></a>静电场环路定理</h2><p>$$\oint_LE\cdot \mathrm{d}l=0$$</p>
-<h3 id="电势"><a href="#电势" class="headerlink" title="电势"></a>电势</h3><p>$$V=\int E \mathrm{d}l$$<br>叠加原理</p>
-<h3 id="场强和电势微分关系"><a href="#场强和电势微分关系" class="headerlink" title="场强和电势微分关系"></a>场强和电势微分关系</h3><p>$$E=-\frac{\mathrm{d}V}{\mathrm{d}l}$$</p>
-
+<h3 id="电场强度的叠加原理"><a href="#电场强度的叠加原理" class="headerlink" title="电场强度的叠加原理"></a>电场强度的叠加原理</h3><p>连续分布电荷的电场强度: $E=\frac{1}{4\pi \varepsilon_0}\int\frac{dq}{r^2}r^0$<br>$\mathrm{d} q=\left\{\begin{array}{l}\lambda \mathrm{d} l \\ \sigma \mathrm{d} S\end{array}\right.$</p>
+<h4 id="直棒中垂线上一点"><a href="#直棒中垂线上一点" class="headerlink" title="直棒中垂线上一点"></a>直棒中垂线上一点</h4><script type="math/tex; mode=display">E=\frac{\lambda}{2\pi\varepsilon x}sin\theta_0i</script><p>无限长直棒：</p>
+<script type="math/tex; mode=display">E=\frac{\lambda}{2\pi\varepsilon x}</script><h4 id="均匀带电圆环轴线上一点"><a href="#均匀带电圆环轴线上一点" class="headerlink" title="均匀带电圆环轴线上一点"></a>均匀带电圆环轴线上一点</h4><script type="math/tex; mode=display">E=\frac{1}{4\pi \varepsilon_0}\frac{qx}{(R^2+x^2)^{3/2}}i</script><h4 id="均匀带电圆盘轴线上一点"><a href="#均匀带电圆盘轴线上一点" class="headerlink" title="均匀带电圆盘轴线上一点"></a>均匀带电圆盘轴线上一点</h4><script type="math/tex; mode=display">E=\frac{\sigma x}{2\varepsilon_0} \frac{rdr}{(r^2+x^2)^{3/2}}</script><p>无限大平面：</p>
+<script type="math/tex; mode=display">E=\frac{\sigma}{2\varepsilon_0}</script><h4 id="一段圆弧的圆心处"><a href="#一段圆弧的圆心处" class="headerlink" title="一段圆弧的圆心处"></a>一段圆弧的圆心处</h4><h2 id="高斯定理"><a href="#高斯定理" class="headerlink" title="高斯定理"></a>高斯定理</h2><script type="math/tex; mode=display">\int_sEdS= \frac{\sum q_i}{\varepsilon_0}</script><script type="math/tex; mode=display">
+\begin{array}{|c|c|}%
+\hline %
+\\
+无限长直导线&E=\frac{\lambda}{2\pi \varepsilon_0x}\\
+\\
+带电球体&fr\\
+\\
+均匀带电球层&frr\\
+\\
+\hline %
+\end{array}</script><h2 id="静电场环路定理"><a href="#静电场环路定理" class="headerlink" title="静电场环路定理"></a>静电场环路定理</h2><script type="math/tex; mode=display">\oint_LE\cdot \mathrm{d}l=0</script><h3 id="电势"><a href="#电势" class="headerlink" title="电势"></a>电势</h3><script type="math/tex; mode=display">V=\int E \mathrm{d}l</script><p>叠加原理</p>
+<h3 id="场强和电势微分关系"><a href="#场强和电势微分关系" class="headerlink" title="场强和电势微分关系"></a>场强和电势微分关系</h3><script type="math/tex; mode=display">E=-\frac{\mathrm{d}V}{\mathrm{d}l}</script>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/11/12/notes/%E7%94%B5%E7%A3%81%E5%9C%BA/" data-id="ckhgf44ru0005j0vf6ugrc7uj" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/11/12/notes/%E7%94%B5%E7%A3%81%E5%9C%BA/" data-id="ckhgfidh5000574vf41p6cu9f" class="article-share-link">Share</a>
       
       
     </footer>
@@ -515,10 +521,12 @@
 <li>某点函数连续与函数偏导无关</li>
 </ul>
 <h3 id="空间向量"><a href="#空间向量" class="headerlink" title="空间向量"></a>空间向量</h3><h5 id="求向量长度"><a href="#求向量长度" class="headerlink" title="求向量长度"></a>求向量长度</h5><h5 id="投影"><a href="#投影" class="headerlink" title="投影"></a>投影</h5><h5 id="向量叉乘"><a href="#向量叉乘" class="headerlink" title="向量叉乘"></a>向量叉乘</h5><h3 id="空间几何"><a href="#空间几何" class="headerlink" title="空间几何"></a>空间几何</h3><h5 id="梯度"><a href="#梯度" class="headerlink" title="梯度"></a>梯度</h5><ul>
-<li>gradu=对标量（/向量），得向量<br>$$<br>gradu_M=(u_x+u_y+u_z)_M<br>$$</li>
+<li>gradu=对标量（/向量），得向量<script type="math/tex; mode=display">
+gradu_M=(u_x+u_y+u_z)_M</script></li>
 </ul>
 <h5 id="旋度"><a href="#旋度" class="headerlink" title="旋度"></a>旋度</h5><ul>
-<li>rotA=对向量，得向量：行列式<br>$$<br>Pi+Qj+Rk—i=dR/dy-dQ/dz<br>$$</li>
+<li>rotA=对向量，得向量：行列式<script type="math/tex; mode=display">
+Pi+Qj+Rk---i=dR/dy-dQ/dz</script></li>
 </ul>
 <h5 id="散度"><a href="#散度" class="headerlink" title="散度"></a>散度</h5><ul>
 <li>divA=对向量求，得标量</li>
@@ -529,9 +537,16 @@
 <li>x=数字，y=式子交换</li>
 <li>交换后结果（可划分多个区域）</li>
 </ul>
-<h3 id="三重积分"><a href="#三重积分" class="headerlink" title="三重积分"></a>三重积分</h3><h5 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h5><p>1 面Ax+By+Cz+D=0—–z=…..</p>
-<p>2 球面<br>$$<br>(x-x_0)^2+(y-y_0)^2+(z-z_0)^2=R^2<br>$$<br>3 椭球<br>$$<br>\frac{x^2}{a^2}+\frac{y^2}{b^2}+\frac{z^2}{c^2}=1<br>$$<br>4 抛物面<br>$$<br>ax^2+by^2=A-z与z=0围成<br>$$<br>5 锥面<br>$$<br>z=\sqrt{ax^2+by^2}与z=A围成<br>$$</p>
-<h5 id="解法"><a href="#解法" class="headerlink" title="解法"></a>解法</h5><ul>
+<h3 id="三重积分"><a href="#三重积分" class="headerlink" title="三重积分"></a>三重积分</h3><h5 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h5><p>1 面Ax+By+Cz+D=0——-z=…..</p>
+<p>2 球面</p>
+<script type="math/tex; mode=display">
+(x-x_0)^2+(y-y_0)^2+(z-z_0)^2=R^2</script><p>3 椭球</p>
+<script type="math/tex; mode=display">
+\frac{x^2}{a^2}+\frac{y^2}{b^2}+\frac{z^2}{c^2}=1</script><p>4 抛物面</p>
+<script type="math/tex; mode=display">
+ax^2+by^2=A-z与z=0围成</script><p>5 锥面</p>
+<script type="math/tex; mode=display">
+z=\sqrt{ax^2+by^2}与z=A围成</script><h5 id="解法"><a href="#解法" class="headerlink" title="解法"></a>解法</h5><ul>
 <li><p>投影法</p>
 </li>
 <li><p>切平面法</p>
@@ -540,65 +555,65 @@
 <h3 id="第一型曲线积分"><a href="#第一型曲线积分" class="headerlink" title="第一型曲线积分"></a>第一型曲线积分</h3><h5 id="参数方程"><a href="#参数方程" class="headerlink" title="参数方程"></a>参数方程</h5><ul>
 <li>多为圆的一部分</li>
 </ul>
-<p>$$<br>L:\begin{cases}x=x(\theta)\y=y(\theta)\end{cases}<br>$$</p>
-<h5 id="线性方程"><a href="#线性方程" class="headerlink" title="线性方程"></a>线性方程</h5><ul>
+<script type="math/tex; mode=display">
+L:\begin{cases}x=x(\theta)\\y=y(\theta)\end{cases}</script><h5 id="线性方程"><a href="#线性方程" class="headerlink" title="线性方程"></a>线性方程</h5><ul>
 <li>多为线段</li>
 </ul>
-<p>$$<br>L:y=y(x)<br>$$</p>
-<h5 id="性质"><a href="#性质" class="headerlink" title="性质"></a>性质</h5><ul>
-<li><p>$$<br>\int_{L}1ds=L的长度<br>$$</p>
-</li>
-<li><p>$$<br>若L关于x=0对称，L_1是L的x \geq0部分<br>$$</p>
-</li>
-<li><p>$$<br>若L关于y=0对称，L_2是L的y \geq0部分<br>$$</p>
-</li>
+<script type="math/tex; mode=display">
+L:y=y(x)</script><h5 id="性质"><a href="#性质" class="headerlink" title="性质"></a>性质</h5><ul>
+<li><script type="math/tex; mode=display">
+\int_{L}1ds=L的长度</script></li>
+<li><script type="math/tex; mode=display">
+若L关于x=0对称，L_1是L的x \geq0部分</script></li>
+<li><script type="math/tex; mode=display">
+若L关于y=0对称，L_2是L的y \geq0部分</script></li>
 </ul>
-<h3 id="第二型曲线积分"><a href="#第二型曲线积分" class="headerlink" title="第二型曲线积分"></a>第二型曲线积分</h3><p>$$<br>\int_{L}P(x,y)dx+Q(x,y)dy<br>$$</p>
-<h5 id="参数方程-1"><a href="#参数方程-1" class="headerlink" title="参数方程"></a>参数方程</h5><h5 id="线性方程-1"><a href="#线性方程-1" class="headerlink" title="线性方程"></a>线性方程</h5><h5 id="性质-1"><a href="#性质-1" class="headerlink" title="性质"></a>性质</h5><ul>
+<h3 id="第二型曲线积分"><a href="#第二型曲线积分" class="headerlink" title="第二型曲线积分"></a>第二型曲线积分</h3><script type="math/tex; mode=display">
+\int_{L}P(x,y)dx+Q(x,y)dy</script><h5 id="参数方程-1"><a href="#参数方程-1" class="headerlink" title="参数方程"></a>参数方程</h5><h5 id="线性方程-1"><a href="#线性方程-1" class="headerlink" title="线性方程"></a>线性方程</h5><h5 id="性质-1"><a href="#性质-1" class="headerlink" title="性质"></a>性质</h5><ul>
 <li>积分与路径无关</li>
 <li>格林公式</li>
 </ul>
-<h3 id="第一型曲面积分"><a href="#第一型曲面积分" class="headerlink" title="第一型曲面积分"></a>第一型曲面积分</h3><p>$$<br>\int\int f(x,y,z)ds<br>$$</p>
-<ul>
+<h3 id="第一型曲面积分"><a href="#第一型曲面积分" class="headerlink" title="第一型曲面积分"></a>第一型曲面积分</h3><script type="math/tex; mode=display">
+\int\int f(x,y,z)ds</script><ul>
 <li>投影</li>
 </ul>
-<h5 id="z-z-x-y"><a href="#z-z-x-y" class="headerlink" title="z=z (x,y)"></a>z=z (x,y)</h5><p>$$<br>\int\int f[x,y,z(x,y)]\sqrt{1+(\frac{dz}{dz})^2+(\frac{dz}{dy})^2}<br>$$</p>
-<h5 id="x-x-y-z"><a href="#x-x-y-z" class="headerlink" title="x=x(y,z)"></a>x=x(y,z)</h5><h5 id="y-y-x-z"><a href="#y-y-x-z" class="headerlink" title="y=y(x,z)"></a>y=y(x,z)</h5><h3 id="第二类曲面积分"><a href="#第二类曲面积分" class="headerlink" title="第二类曲面积分"></a>第二类曲面积分</h3><p>$$<br>\int\int P(x,y,z)dydz<br>$$</p>
-<p>$$<br>D_{xy}投影<br>$$</p>
-<p>x正向原点看</p>
-<h5 id="能看到曲面（1，4外；2，3内"><a href="#能看到曲面（1，4外；2，3内" class="headerlink" title="能看到曲面（1，4外；2，3内)"></a>能看到曲面（1，4外；2，3内)</h5><p>$$<br>\int\int P(x,y,z)dydz=\int\int P[x(y,z),y,z]dydz<br>$$</p>
-<h5 id="看不到曲面（1，4内；2，3外）"><a href="#看不到曲面（1，4内；2，3外）" class="headerlink" title="看不到曲面（1，4内；2，3外）"></a>看不到曲面（1，4内；2，3外）</h5><p>$$<br>\int\int P(x,y,z)dydz=-\int\int P[x(y,z),y,z]dydz<br>$$</p>
-<h5 id="看到一条线"><a href="#看到一条线" class="headerlink" title="看到一条线"></a>看到一条线</h5><p>$$<br>\int\int P(x,y,z)dydz=0<br>$$</p>
-<h4 id="P，Q，R同时出现，分别计算相加"><a href="#P，Q，R同时出现，分别计算相加" class="headerlink" title="P，Q，R同时出现，分别计算相加"></a>P，Q，R同时出现，分别计算相加</h4><h3 id="判断级数敛散性"><a href="#判断级数敛散性" class="headerlink" title="判断级数敛散性"></a>判断级数敛散性</h3><h4 id="正项级数"><a href="#正项级数" class="headerlink" title="正项级数"></a>正项级数</h4><p>$$<br>\lim_{n\rightarrow+\infty} u_n =0 继续判断<br>$$</p>
-<p>$$<br>\lim_{n\rightarrow+\infty} u_n \neq0 发散<br>$$</p>
-<h5 id="un可以提出n次方项"><a href="#un可以提出n次方项" class="headerlink" title="un可以提出n次方项"></a>un可以提出n次方项</h5><p>$$<br>p=\lim_{n\rightarrow+\infty} \frac{u_{n+1}}{u_n}<br>$$</p>
-<h5 id="un不可以可以提出n次方项"><a href="#un不可以可以提出n次方项" class="headerlink" title="un不可以可以提出n次方项"></a>un不可以可以提出n次方项</h5><p>$$<br>p=\lim_{n\rightarrow+\infty} \sqrt[n]{u_n}<br>$$</p>
-<h5 id="判断p"><a href="#判断p" class="headerlink" title="判断p"></a>判断p</h5><ul>
+<h5 id="z-z-x-y"><a href="#z-z-x-y" class="headerlink" title="z=z (x,y)"></a>z=z (x,y)</h5><script type="math/tex; mode=display">
+\int\int f[x,y,z(x,y)]\sqrt{1+(\frac{dz}{dz})^2+(\frac{dz}{dy})^2}</script><h5 id="x-x-y-z"><a href="#x-x-y-z" class="headerlink" title="x=x(y,z)"></a>x=x(y,z)</h5><h5 id="y-y-x-z"><a href="#y-y-x-z" class="headerlink" title="y=y(x,z)"></a>y=y(x,z)</h5><h3 id="第二类曲面积分"><a href="#第二类曲面积分" class="headerlink" title="第二类曲面积分"></a>第二类曲面积分</h3><script type="math/tex; mode=display">
+\int\int P(x,y,z)dydz</script><script type="math/tex; mode=display">
+D_{xy}投影</script><p>x正向原点看</p>
+<h5 id="能看到曲面（1，4外；2，3内"><a href="#能看到曲面（1，4外；2，3内" class="headerlink" title="能看到曲面（1，4外；2，3内)"></a>能看到曲面（1，4外；2，3内)</h5><script type="math/tex; mode=display">
+\int\int P(x,y,z)dydz=\int\int P[x(y,z),y,z]dydz</script><h5 id="看不到曲面（1，4内；2，3外）"><a href="#看不到曲面（1，4内；2，3外）" class="headerlink" title="看不到曲面（1，4内；2，3外）"></a>看不到曲面（1，4内；2，3外）</h5><script type="math/tex; mode=display">
+\int\int P(x,y,z)dydz=-\int\int P[x(y,z),y,z]dydz</script><h5 id="看到一条线"><a href="#看到一条线" class="headerlink" title="看到一条线"></a>看到一条线</h5><script type="math/tex; mode=display">
+\int\int P(x,y,z)dydz=0</script><h4 id="P，Q，R同时出现，分别计算相加"><a href="#P，Q，R同时出现，分别计算相加" class="headerlink" title="P，Q，R同时出现，分别计算相加"></a>P，Q，R同时出现，分别计算相加</h4><h3 id="判断级数敛散性"><a href="#判断级数敛散性" class="headerlink" title="判断级数敛散性"></a>判断级数敛散性</h3><h4 id="正项级数"><a href="#正项级数" class="headerlink" title="正项级数"></a>正项级数</h4><script type="math/tex; mode=display">
+\lim_{n\rightarrow+\infty} u_n =0 继续判断</script><script type="math/tex; mode=display">
+\lim_{n\rightarrow+\infty} u_n \neq0 发散</script><h5 id="un可以提出n次方项"><a href="#un可以提出n次方项" class="headerlink" title="un可以提出n次方项"></a>un可以提出n次方项</h5><script type="math/tex; mode=display">
+p=\lim_{n\rightarrow+\infty} \frac{u_{n+1}}{u_n}</script><h5 id="un不可以可以提出n次方项"><a href="#un不可以可以提出n次方项" class="headerlink" title="un不可以可以提出n次方项"></a>un不可以可以提出n次方项</h5><script type="math/tex; mode=display">
+p=\lim_{n\rightarrow+\infty} \sqrt[n]{u_n}</script><h5 id="判断p"><a href="#判断p" class="headerlink" title="判断p"></a>判断p</h5><ul>
 <li><p>p&gt;1 发散</p>
 </li>
 <li><p>P&lt;1 收敛</p>
 </li>
 <li><p>p=1进一步</p>
 <h6 id="判断Vn-比较判别法"><a href="#判断Vn-比较判别法" class="headerlink" title="判断Vn-比较判别法"></a>判断Vn-比较判别法</h6><ul>
-<li><p>$$<br>\sum_{n=1}^{\infty}V_n发散且V_n\leq u_n,发散<br>$$</p>
-</li>
-<li><p>$$<br>\sum_{n=1}^{\infty}V_n收敛且V_n\geq u_n,收敛<br>$$</p>
-<h6 id="比较："><a href="#比较：" class="headerlink" title="比较："></a>比较：</h6></li>
-<li><p>$$<br>\sum_{n=0}^\infty aq^n在|q|\leq1时收敛，在|q|\geq1时发散<br>$$</p>
-</li>
-<li><p>$$<br>\sum_{n=1}^\infty \frac{a}{n^p}在p\geq1时收敛，在p\leq1时发散<br>$$</p>
-</li>
+<li><script type="math/tex; mode=display">
+\sum_{n=1}^{\infty}V_n发散且V_n\leq u_n,发散</script></li>
+<li><script type="math/tex; mode=display">
+\sum_{n=1}^{\infty}V_n收敛且V_n\geq u_n,收敛</script><h6 id="比较："><a href="#比较：" class="headerlink" title="比较："></a>比较：</h6></li>
+<li><script type="math/tex; mode=display">
+\sum_{n=0}^\infty aq^n在|q|\leq1时收敛，在|q|\geq1时发散</script></li>
+<li><script type="math/tex; mode=display">
+\sum_{n=1}^\infty \frac{a}{n^p}在p\geq1时收敛，在p\leq1时发散</script></li>
 <li><p>柯西不等式+sinx&lt;x</p>
 </li>
 </ul>
 </li>
 </ul>
-<h4 id="交错级数"><a href="#交错级数" class="headerlink" title="交错级数"></a>交错级数</h4><p>$$<br>\sum_{n=?}^\infty(-1)^{n+1}u_n或\sum_{n=?}^\infty(-1)^{n}u_n的敛散性<br>$$</p>
-<p>$$<br>\lim_{n\rightarrow\infty}u_n=0发散<br>$$</p>
-<p>$$<br>\lim_{n\rightarrow\infty}u_n\geq0继续判断<br>$$</p>
-<h5 id="比较un与un-1"><a href="#比较un与un-1" class="headerlink" title="比较un与un+1"></a>比较un与un+1</h5><p>$$<br>u_n\geq u_{n+1}收敛<br>$$</p>
-<p>$$<br>u_n\leq u_{n+1}发散<br>$$</p>
-<h3 id="绝对收敛-条件收敛"><a href="#绝对收敛-条件收敛" class="headerlink" title="绝对收敛/条件收敛"></a>绝对收敛/条件收敛</h3><h5 id="正项级数-1"><a href="#正项级数-1" class="headerlink" title="正项级数"></a>正项级数</h5><ul>
+<h4 id="交错级数"><a href="#交错级数" class="headerlink" title="交错级数"></a>交错级数</h4><script type="math/tex; mode=display">
+\sum_{n=?}^\infty(-1)^{n+1}u_n或\sum_{n=?}^\infty(-1)^{n}u_n的敛散性</script><script type="math/tex; mode=display">
+\lim_{n\rightarrow\infty}u_n=0发散</script><script type="math/tex; mode=display">
+\lim_{n\rightarrow\infty}u_n\geq0继续判断</script><h5 id="比较un与un-1"><a href="#比较un与un-1" class="headerlink" title="比较un与un+1"></a>比较un与un+1</h5><script type="math/tex; mode=display">
+u_n\geq u_{n+1}收敛</script><script type="math/tex; mode=display">
+u_n\leq u_{n+1}发散</script><h3 id="绝对收敛-条件收敛"><a href="#绝对收敛-条件收敛" class="headerlink" title="绝对收敛/条件收敛"></a>绝对收敛/条件收敛</h3><h5 id="正项级数-1"><a href="#正项级数-1" class="headerlink" title="正项级数"></a>正项级数</h5><ul>
 <li>级数发散则发散</li>
 <li>级数收敛，则绝对收敛</li>
 </ul>
@@ -608,23 +623,23 @@
 <li><p>级数收敛，去（-1）n次方</p>
 <h5 id="收敛则绝对收敛"><a href="#收敛则绝对收敛" class="headerlink" title="收敛则绝对收敛"></a>收敛则绝对收敛</h5><h5 id="发散则条件收敛"><a href="#发散则条件收敛" class="headerlink" title="发散则条件收敛"></a>发散则条件收敛</h5></li>
 </ul>
-<h3 id="幂级数"><a href="#幂级数" class="headerlink" title="幂级数"></a>幂级数</h3><h5 id="已知幂级数在某点，判断另一点"><a href="#已知幂级数在某点，判断另一点" class="headerlink" title="已知幂级数在某点，判断另一点"></a>已知幂级数在某点，判断另一点</h5><p><img src="E:%5Cmarkdown_notes%5C1.png" alt=""></p>
-<h5 id="求幂级数收敛域-收敛区间"><a href="#求幂级数收敛域-收敛区间" class="headerlink" title="求幂级数收敛域/收敛区间"></a>求幂级数收敛域/收敛区间</h5><p><img src="E:%5Cmarkdown_notes%5C2.png" alt=""></p>
-<h5 id="求收敛半径"><a href="#求收敛半径" class="headerlink" title="求收敛半径"></a>求收敛半径</h5><p><img src="E:%5Cmarkdown_notes%5C3.png" alt=""></p>
+<h3 id="幂级数"><a href="#幂级数" class="headerlink" title="幂级数"></a>幂级数</h3><h5 id="已知幂级数在某点，判断另一点"><a href="#已知幂级数在某点，判断另一点" class="headerlink" title="已知幂级数在某点，判断另一点"></a>已知幂级数在某点，判断另一点</h5><p><img src="E:\markdown_notes\1.png" alt=""></p>
+<h5 id="求幂级数收敛域-收敛区间"><a href="#求幂级数收敛域-收敛区间" class="headerlink" title="求幂级数收敛域/收敛区间"></a>求幂级数收敛域/收敛区间</h5><p><img src="E:\markdown_notes\2.png" alt=""></p>
+<h5 id="求收敛半径"><a href="#求收敛半径" class="headerlink" title="求收敛半径"></a>求收敛半径</h5><p><img src="E:\markdown_notes\3.png" alt=""></p>
 <h5 id="求幂级数在收敛域的和函数"><a href="#求幂级数在收敛域的和函数" class="headerlink" title="求幂级数在收敛域的和函数"></a>求幂级数在收敛域的和函数</h5><p>vn无n被乘或者被除</p>
-<p><img src="E:%5Cmarkdown_notes%5C4.png" alt=""></p>
+<p><img src="E:\markdown_notes\4.png" alt=""></p>
 <p>次数与n次数有关</p>
-<p><img src="E:%5Cmarkdown_notes%5C5.png" alt=""></p>
+<p><img src="E:\markdown_notes\5.png" alt=""></p>
 <p>可以提出x项等</p>
 <h5 id="展开为幂级数"><a href="#展开为幂级数" class="headerlink" title="展开为幂级数"></a>展开为幂级数</h5><p>1、设a=幂级数的要求，用a替换函数里的x</p>
 <p>2、对照公式展开函数</p>
 <p>3、用幂级数的要求替换回a</p>
-<p><img src="E:%5Cmarkdown_notes%5C6.png" alt=""></p>
+<p><img src="E:\markdown_notes\6.png" alt=""></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/06/13/[%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90]/" data-id="ckhgf44qq0001j0vff5hw5hr6" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/06/13/[%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90]/" data-id="ckhgfidg3000174vfh7f97bb4" class="article-share-link">Share</a>
       
       
     </footer>
@@ -661,7 +676,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/06/09/blog%E6%96%87%E7%AB%A0/" data-id="ckhgf44ql0000j0vf6zou93d1" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/06/09/blog%E6%96%87%E7%AB%A0/" data-id="ckhgfidgb000274vfg3cg36jn" class="article-share-link">Share</a>
       
       
     </footer>
